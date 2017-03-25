@@ -8,6 +8,33 @@
           {{content}}
       </article>
 
+      <!-- AddToAny BEGIN -->
+        <div class="row">
+        <style type="text/css">
+        /* Hide AddToAny vertical share bar when screen is less than 980 pixels wide */
+        @media screen and (max-width: 980px) {
+          .a2a_floating_style.a2a_vertical_style { display: none; }
+        }
+        </style>
+            <div class="a2a_kit a2a_kit_size_48 a2a_floating_style a2a_vertical_style" style="left:5%; top:15%";>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_reddit"></a>
+            <a class="a2a_button_pinterest"></a>
+            <a class="a2a_button_email"></a>
+          </div>
+                <script>
+                var a2a_config = a2a_config || {};
+                a2a_config.onclick = 1;
+                a2a_config.color_main = "D7E5ED";
+                a2a_config.color_border = "AECADB";
+                a2a_config.color_link_text = "333333";
+                a2a_config.color_link_text_hover = "333333";
+                </script>
+                <script async src="https://static.addtoany.com/menu/page.js"></script>
+            <!-- AddToAny END -->
+          </div>
+
       <ul class="pager blog-pager">
         {{#prev_post}}
         <li class="previous">
