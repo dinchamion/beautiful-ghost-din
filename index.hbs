@@ -7,18 +7,30 @@
         {{#foreach posts}}
         <article class="post-preview">
           <a href="{{url}}">
-      	  <h2 class="post-title">{{title}}</h2> 
+      	  <h2 class="post-title">{{title}}</h2>
           </a>
 
           <p class="post-meta">
             Posted on <time datetime="{{date format='YYYY-MM-DD'}}">{{date}}</time>
           </p>
-        
+
           <div class="post-entry">
-            {{excerpt words="70"}}
-      	  <a href="{{url}}" class="post-read-more">[Read&nbsp;More]</a>
+            {{content}}
+            <!-- AddToAny BEGIN -->
+            <div>
+            <a href="https://www.addtoany.com/add_to/twitter?linkurl={{@blog.url}}{{url}}&amp;linkname={{title}}" target="_blank"><img src="https://static.addtoany.com/buttons/twitter.svg"></a>
+            <a href="https://www.addtoany.com/add_to/facebook?linkurl={{@blog.url}}{{url}}&amp;linkname={{title}}" target="_blank"><img src="https://static.addtoany.com/buttons/facebook.svg"></a>
+            <a href="https://www.addtoany.com/add_to/reddit?linkurl={{@blog.url}}{{url}}&amp;linkname={{title}}" target="_blank"><img src="https://static.addtoany.com/buttons/reddit.svg"></a>
+            <a href="https://www.addtoany.com/add_to/tumblr?linkurl={{@blog.url}}{{url}}&amp;linkname={{title}}" target="_blank"><img src="https://static.addtoany.com/buttons/tumblr.svg"></a>
+            <a href="https://www.addtoany.com/add_to/pinterest?linkurl={{@blog.url}}{{url}}&amp;linkname={{title}}" target="_blank"><img src="https://static.addtoany.com/buttons/pinterest.svg"></a>
+            <a href="https://www.addtoany.com/add_to/email?linkurl={{@blog.url}}{{url}}&amp;linkname={{title}}" target="_blank"><img src="https://static.addtoany.com/buttons/email.svg"></a>
+            </div>
+            <p>
+              <script id="dsq-count-scr" src="//dinchamion.disqus.com/count.js" async></script>
+              <a href="{{url}}#disqus_thread" class="post-read-more"><span class="disqus-comment-count" data-disqus-identifier="disqus_identifier">Comments</span></a>
+            </p>
           </div>
-        
+
         </article>
         {{/foreach}}
       </div>

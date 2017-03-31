@@ -110,7 +110,7 @@ var main = {
 
 document.addEventListener('DOMContentLoaded', main.init);
 
-// Dinchamion
+// GhostHunter
 
 $(".search-results").addClass("results-hide");
 $("#search-field").ghostHunter({
